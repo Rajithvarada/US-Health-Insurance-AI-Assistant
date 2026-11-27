@@ -175,6 +175,7 @@ Implemented features:
 - Error-handling tests: 5/5 passed.
 
 Detailed reports are listed in Section 12 of this README.
+
 ### AWS Deployment Status
 
 AWS deployment was successfully completed and tested using Amazon SageMaker AI.
@@ -225,45 +226,43 @@ Development hardware:
 QLoRA and 4-bit quantization were used to make fine-tuning practical with limited GPU memory.
 
 ## 10. Project Structure
-
 ```text
-US_Health_Insurance_AI/
-|
-|-- data/
-|   |-- Raw/
-|   |-- Backups/
-|   |-- generated/
-|   |-- curated/
-|   `-- Processed/
-|
-|-- phase6/
-|   |-- prompts/
-|   `-- evaluation/
-|
-|-- phase7/
-|   |-- configs/
-|   |-- training/
-|   |-- logs/
-|   |-- checkpoints/
-|   `-- merged_model/
-|
-|-- phase8/
-|   |-- configs/
-|   |-- training/
-|   |-- evaluation/
-|   `-- checkpoints/
-|
-|-- phase9/
-|   |-- checkpoints/
-|   `-- evaluation/
-|
-|-- phase10/
-|   |-- AWS_DEPLOYMENT.md
-|   |-- app/
-|   |-- code/
-|   `-- model/
+US-Health-Insurance-AI-Assistant/
+│
+├── app/
+│   ├── app.py
+│   ├── aws_endpoint.py
+│   └── safety.py
+│
+├── code/
+│   ├── inference.py
+│   └── requirements.txt
+│
+├── hf_space/
+│   ├── README.md
+│   ├── app.py
+│   ├── requirements.txt
+│   └── safety.py
+│
+├── .gitignore
+├── README.md
+├── architecture.md
+├── AWS_DEPLOYMENT.md
+│
+├── phase1_source_collection_report.md
+├── phase2_raw_dataset_creation_report.md
+├── phase3_dataset_curation_report.md
+├── phase4_preprocessing_report.md
+├── phase5_model_selection_report.md
+├── phase6_baseline_evaluation_report.md
+├── phase7_fine_tuning_report.md
+├── phase8_experiment_results.md
+├── phase9_final_evaluation_report.md
+├── phase10_aws_deployment_report.md
+├── phase10_error_handling_report.md
+├── phase10_local_gradio_test_report.md
+└── phase10_safety_regression_report.md
 ```
-Note: Local model weights, checkpoints, virtual environments, and AWS credentials should not be uploaded to a public repository.
 
 ## 11. Setup Instructions
 
@@ -285,20 +284,13 @@ python -m venv .venv
 6. Install the remaining dependencies:
 
 ```bash
-pip install -r requirements.txt
+pip install -r code/requirements.txt
 ```
 
-7. Download or access the selected base model through Hugging Face.
-8. Ensure the required local model artifacts are available.
-9. Run the local Gradio application from the project root:
-
-```bash
-python -m phase10.app.app
-```
-
-10. Open the local URL displayed in the terminal.
-
-For AWS inference, configure valid AWS credentials and set the SageMaker endpoint name before selecting the AWS backend. The model was successfully deployed and tested on Amazon SageMaker. The endpoint was deleted after testing, so redeployment is required before using live AWS inference.
+7. The GitHub repository contains the application source code and documentation.
+8. The complete local project structure and fine-tuned model artifacts are required to run the application.
+9. The model artifacts are not included in this public repository because of their size.
+10. Refer to the project documentation for the deployment configuration and model requirements.
 
 Note: GPU, CUDA, PyTorch, and BitsAndBytes compatibility depends on the operating system and hardware. The requirements file does not install the CUDA-specific PyTorch build.
 
