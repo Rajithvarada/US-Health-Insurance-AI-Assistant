@@ -174,8 +174,7 @@ Implemented features:
 - Gradio UI regression tests: 5/5 passed.
 - Error-handling tests: 5/5 passed.
 
-Detailed reports are available in the `reports/` directory.
-
+Detailed reports are listed in Section 12 of this README.
 ### AWS Deployment Status
 
 AWS deployment was successfully completed and tested using Amazon SageMaker AI.
@@ -263,7 +262,7 @@ US_Health_Insurance_AI/
 |   |-- app/
 |   |-- code/
 |   `-- model/
-
+```
 Note: Local model weights, checkpoints, virtual environments, and AWS credentials should not be uploaded to a public repository.
 
 ## 11. Setup Instructions
@@ -305,10 +304,12 @@ Note: GPU, CUDA, PyTorch, and BitsAndBytes compatibility depends on the operatin
 
 ## 12. Documentation and Reports
 
-Detailed project documentation is maintained in the `reports/` directory.
+Detailed project documentation is maintained in the repository root.
 
-Current reports include:
+### Phase 1–9 Reports
 
+- `phase1_source_collection_report.md`
+- `phase2_raw_dataset_creation_report.md`
 - `phase3_dataset_curation_report.md`
 - `phase4_preprocessing_report.md`
 - `phase5_model_selection_report.md`
@@ -316,12 +317,17 @@ Current reports include:
 - `phase7_fine_tuning_report.md`
 - `phase8_experiment_results.md`
 - `phase9_final_evaluation_report.md`
-- `phase10_local_gradio_test_report.md`
-- `phase10_aws_deployment_report.md`
-- `phase10_safety_regression_report.md`
-- `phase10_error_handling_report.md`
 
-The architecture diagram is maintained in `docs/architecture.md` using Mermaid.
+### Phase 10 Reports
+
+- `phase10_aws_deployment_report.md`
+- `phase10_error_handling_report.md`
+- `phase10_local_gradio_test_report.md`
+- `phase10_safety_regression_report.md`
+
+**Total: 13 reports covering Phases 1–10.**
+
+The architecture documentation is available in `architecture.md` and uses Mermaid.
 
 ## 13. Limitations and Responsible Use
 
