@@ -1,0 +1,55 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.log
+
+# Virtual environment
+.venv/
+venv/
+
+# Hugging Face and model caches
+.cache/
+**/.cache/
+huggingface_cache/
+
+# Local model weights and checkpoints
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+
+# Environment secrets
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large model artifacts and archives
+*.tar.gz
+*.zip
+*.gguf
+*.onnx
+
+# Local merged model and training checkpoints
+phase10/model/
+phase7/checkpoints/
+phase8/checkpoints/
+phase9/checkpoints/
+
+# Local backups
+backups/
+
+# AWS credentials and private keys
+.aws/
+*.pem
+*.key
+
+# Progress backups
+PROJECT_PROGRESS_backup.md
