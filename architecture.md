@@ -23,6 +23,6 @@ flowchart TD
     P --> Q[Local Inference]
     P --> R[Gradio AWS Inference Backend]
     S --> T[AWS SageMaker Endpoint]
-    T --> R
+    R --> T
     O --> S[Amazon S3]
 ```
