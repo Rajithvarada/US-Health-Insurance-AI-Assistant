@@ -58,14 +58,14 @@ The project follows 11 phases:
 3. Q&A Creation and Curation
 4. Dataset Preprocessing
 5. Base Model Selection
-6. Baseline Model Evaluation â€“ Prompting First
+6. Baseline Model Evaluation – Prompting First
 7. Fine-Tuning
 8. Hyperparameter Tuning and Optimization
 9. Model Validation and Final Evaluation
 10. AWS Deployment and Final Application
 11. Project Documentation and Interview Preparation
 
-Phases 1â€“10 have been completed, including successful AWS SageMaker GPU deployment and real cloud inference testing.
+Phases 1–10 have been completed, including successful AWS SageMaker GPU deployment and real cloud inference testing.
 
 Phase 11 documentation and interview preparation are in progress.
 
@@ -181,7 +181,7 @@ AWS deployment was successfully completed and tested using Amazon SageMaker AI.
 
 Deployment configuration:
 
-- AWS Region: `ap-southeast-2` (Asia Pacific â€“ Sydney)
+- AWS Region: `ap-southeast-2` (Asia Pacific – Sydney)
 - Model: Fine-tuned Qwen2.5-1.5B-Instruct
 - SageMaker instance: `ml.g6.xlarge`
 - GPU count: 1
